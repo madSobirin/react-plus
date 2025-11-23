@@ -12,7 +12,6 @@ const AuthForm = ({ title, type }) => {
         </h1>
 
         <form className="space-y-4">
-          {/* REGISTER: TAMBAHI FULL NAME */}
           {type === "register" && (
             <>
               <Label>Full Name</Label>
@@ -26,7 +25,7 @@ const AuthForm = ({ title, type }) => {
           <Label>Password</Label>
           <Input type="password" placeholder="****" />
 
-          {/* REGISTER: CONFIRM PASSWORD */}
+          {/* REGISTER: CONFIRM PASSWORD  */}
           {type === "register" && (
             <>
               <Label>Confirm Password</Label>
