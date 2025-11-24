@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
-import RegisterPage from "./page/Register";
-import LoginPage from "./page/Login";
+import LoginPage from "./page/auth/Login";
+import RegisterPage from "./page/auth/Register";
+import Index from "./page/Dashboard/Index";
 
 const NotFound = () => {
   return (
@@ -16,6 +17,7 @@ function App() {
     <Routes>
       <Route path="/" element={<LoginPage />} />
       <Route path="/register" element={<RegisterPage />} />
+      <Route path="/dashboard" element={<Index />} />
       {/* ROUTE ERROR 404 */}
       <Route path="*" element={<NotFound />} />
     </Routes>

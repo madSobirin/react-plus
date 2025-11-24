@@ -1,4 +1,4 @@
-import AuthForm from "../components/ui/Input/AuthForm";
+import AuthForm from "../../components/ui/Input/AuthForm";
 
 const RegisterPage = () => {
   return (
